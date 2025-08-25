@@ -22,3 +22,40 @@ Task #1
 Create a GitHub Repository with a README.md file:
 
 ![](githubrepo.png)
+
+Task #2 Set Up a Blog
+
+<https://lis4370-r-programming-journal.netlify.app/>
+
+Task #3 Install R and RStudio
+
+![](rstudio_console.png)
+
+The installation process of RStudio required me to install R first because
+RStudio relies on the R programming language for its functionality. The process
+began with going to the R project website to download the file for my operating
+system, and then run the installer. Once it was installed, I was able to go to
+the website that allowed me to download the desktop installer for RStudio.
+
+The main issue I encountered during installation was that it was difficult to
+have the right Windows installer to be able to download it successfully. This
+problem is what caused me to install RStudio repetitively. The way I resolved
+this problem is that I got the right runtime application that supports the
+installation requirements for RStudio. 
+
+In terms of my system details, I ran a Windows 11 operating system on my PC, the
+R version that I currently have is R 4.4.2, and RStudio version is 2024.12.0.467.
+
+Task #4 Read Foundational Chapters
+
+An R vector is an object or entity that acts as a container to store data. The
+vector is the simplest way to store more than one data value in R programs.
+Vectors are important for data analysis because they can hold different data
+types or modes in one container. After storing data types in the container, R
+programs and applications can iterate over the elements in the vector and
+perform many different types of operations on the different modes or types of
+data contained in the vector for further analysis and extracting meaning out of
+large data sets. Elements in vectors can be modified and updated, which makes
+them flexible and versatile, so if data changes, a vector is a good way to keep
+track of variables.
+
