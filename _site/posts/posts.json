@@ -1,19 +1,19 @@
 [
   {
-    "path": "posts/welcome/",
-    "title": "Welcome to R Programming Journal – Skylar Walsh",
-    "description": "Welcome to our new blog, R Programming Journal – Skylar Walsh. We hope you enjoy \nreading what we have to say!",
+    "path": "posts/2025-08-25-module-1-assignment-1/",
+    "title": "Module 1 Assignment 1",
+    "description": "First Post.",
     "author": [
       {
-        "name": "Nora Jones",
-        "url": "https://example.com/norajones"
+        "name": "Skylar Walsh",
+        "url": {}
       }
     ],
     "date": "2025-08-25",
     "categories": [],
-    "contents": "\r\n\r\n\r\n\r\n",
+    "contents": "\r\nThis is my first post for LIS4370\r\nTask #1\r\nCreate a GitHub Repository with a README.md file:\r\n\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2025-08-25T13:51:26-04:00",
+    "last_modified": "2025-08-25T14:18:09-04:00",
     "input_file": {}
   }
 ]

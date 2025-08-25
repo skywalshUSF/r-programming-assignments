@@ -1,0 +1,24 @@
+---
+title: "Module 1 Assignment 1"
+description: |
+  First Post.
+preview: 
+author:
+  - name: Skylar Walsh
+date: 2025-08-25
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+This is my first post for LIS4370
+
+Task #1
+
+Create a GitHub Repository with a README.md file:
+
+![](githubrepo.png)
