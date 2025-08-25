@@ -1,0 +1,19 @@
+[
+  {
+    "path": "posts/welcome/",
+    "title": "Welcome to R Programming Journal – Skylar Walsh",
+    "description": "Welcome to our new blog, R Programming Journal – Skylar Walsh. We hope you enjoy \nreading what we have to say!",
+    "author": [
+      {
+        "name": "Nora Jones",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2025-08-25",
+    "categories": [],
+    "contents": "\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2025-08-25T13:51:26-04:00",
+    "input_file": {}
+  }
+]
