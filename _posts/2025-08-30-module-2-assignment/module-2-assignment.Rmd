@@ -2,7 +2,7 @@
 title: "Module 2 Assignment"
 description: |
   Introduction to Basic R Functions and Data Structures
-preview:
+preview: https://github.com/skywalshUSF/r-programming-assignments/blob/main/_posts/2025-08-30-module-2-assignment/error2.jpg?raw=true
 author:
   - name: Skylar Walsh
 date: 2025-08-30

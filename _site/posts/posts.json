@@ -12,8 +12,8 @@
     "date": "2025-08-30",
     "categories": [],
     "contents": "\r\nTask 1. Download Import Instructions\r\nI have successfully downloaded the document and read the instructions in the\r\ncheat sheet carefully. The methods in the “readr” and “tidyr” packages to read\r\nand write data files, save data, handle missing values, expand tables, and split\r\ncells all seem very familiar to me.\r\nTask 2. Read Assigned Chapters\r\nI have successfully read the assigned chapters on R Programming and GitHub\r\nTask 3. Evaluate myMean function\r\n\r\n\r\n# Use the vector:\r\n\r\nassignment2 <- c(16, 18, 14, 22, 27, 17, 19, 17, 17, 22, 20, 22)\r\n\r\n# Consider this function:\r\nmyMean <- function(assignment2) {\r\n  return(sum(assignment) / length(someData))\r\n}\r\n\r\n# In RStudio, run myMean(assignment2) and record the output or error.\r\nmyMean(assignment2)\r\n\r\nError in myMean(assignment2): object 'assignment' not found\r\n\r\n# The error message is displayed above.\r\n\r\n\r\nThe function fails because the variable “assignment” does not exist since it has not been created yet. Also, the variable “someData” does not exist. In order to use these two variables, they have to be declared before they are used as arguments for functions. The only variable that can be used in the “myMean” function would be “assignment2” because it is the input variable for the function.\r\nHere is a corrected version of “myMean” that correctly returns the mean of “assignment2”\r\n\r\n\r\n# The corrected function\r\nmyMean <- function(assignment2) {\r\n  return(sum(assignment2) / length(assignment2))\r\n}\r\n\r\n# Call the corrected function\r\nmyMean(assignment2)\r\n\r\n[1] 19.25\r\n\r\n\r\n\r\n\r\n",
-    "preview": {},
-    "last_modified": "2025-08-30T15:46:27-04:00",
+    "preview": "https://github.com/skywalshUSF/r-programming-assignments/blob/main/_posts/2025-08-30-module-2-assignment/error2.jpg?raw=true",
+    "last_modified": "2025-08-30T15:52:46-04:00",
     "input_file": "module-2-assignment.knit.md"
   },
   {
