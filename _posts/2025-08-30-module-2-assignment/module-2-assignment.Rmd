@@ -1,0 +1,62 @@
+---
+title: "Module 2 Assignment"
+description: |
+  Introduction to Basic R Functions and Data Structures
+preview:
+author:
+  - name: Skylar Walsh
+date: 2025-08-30
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Task 1. Download Import Instructions
+
+I have successfully downloaded the document and read the instructions in the
+cheat sheet carefully. The methods in the "readr" and "tidyr" packages to read
+and write data files, save data, handle missing values, expand tables, and split
+cells all seem very familiar to me.
+
+Task 2. Read Assigned Chapters
+
+I have successfully read the assigned chapters on R Programming and GitHub
+
+Task 3. Evaluate myMean function
+
+```{r My Mean Function W/ Error, echo=TRUE}
+#| error: TRUE
+# Use the vector:
+
+assignment2 <- c(16, 18, 14, 22, 27, 17, 19, 17, 17, 22, 20, 22)
+
+# Consider this function:
+myMean <- function(assignment2) {
+  return(sum(assignment) / length(someData))
+}
+
+# In RStudio, run myMean(assignment2) and record the output or error.
+myMean(assignment2)
+
+# The error message is displayed above.
+```
+
+The function fails because the variable "assignment" does not exist since it has not been created yet. Also, the variable "someData" does not exist. In order to use these two variables, they have to be declared before they are used as arguments for functions. The only variable that can be used in the "myMean" function would be "assignment2" because it is the input variable for the function.
+
+Here is a corrected version of "myMean" that correctly returns the mean of "assignment2"
+
+```{r My Mean Function Without Error, echo=TRUE}
+# The corrected function
+myMean <- function(assignment2) {
+  return(sum(assignment2) / length(assignment2))
+}
+
+# Call the corrected function
+myMean(assignment2)
+
+```
+
