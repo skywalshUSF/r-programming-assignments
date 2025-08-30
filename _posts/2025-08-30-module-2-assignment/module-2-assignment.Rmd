@@ -17,10 +17,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 Task 1. Download Import Instructions
 
-I have successfully downloaded the document and read the instructions in the
-cheat sheet carefully. The methods in the "readr" and "tidyr" packages to read
-and write data files, save data, handle missing values, expand tables, and split
-cells all seem very familiar to me.
+I have successfully downloaded the document and read the instructions in the cheat sheet carefully. The methods in the "readr" and "tidyr" packages to read and write data files, save data, handle missing values, expand tables, and split cells all seem very familiar to me.
 
 Task 2. Read Assigned Chapters
 
@@ -60,3 +57,6 @@ myMean(assignment2)
 
 ```
 
+Here is a screenshot that displays my GitHub repository updated with the blog link and corrected myMean function:
+
+![](githubmod2.png){width="900"}
