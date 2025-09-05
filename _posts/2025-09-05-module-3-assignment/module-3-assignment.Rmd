@@ -2,7 +2,7 @@
 title: "Module 3 Assignment"
 description: |
   Introduction to Data Frame
-preview:
+preview: https://github.com/skywalshUSF/r-programming-assignments/blob/main/_posts/2025-09-05-module-3-assignment/poll.jpg?raw=true
 author:
   - name: Skylar Walsh
 date: 2025-09-05
@@ -63,8 +63,6 @@ Task 3. Discuss and Reflect
 
 On your blog, write 2-3 paragraphs addressing:
 
-
-
 Key patterns you observe (e.g., which candidate shows the largest discrepancies).
 
 I was able to observe multiple key patterns. Both ABC and CBS polls show that Donald had the highest values in the polls, whereas Carly had the lowest values in the polls. The mean of ABC polls, 24.14286, and the mean of the CBS polls, 27.14286, indicates that both mean values are close to each other and are somewhat similar. The median of ABC polls, 15, and the median of the CBS polls, 19, indicates that both median values are close to each other and are somewhat similar, but a difference of 4 could be significant. The range of ABC polls, from 2-62, and the range of the CBS polls, from 1-75, are somewhat similar. Donald had the largest discrepancies with a difference of 13 between the ABC_poll and the CBS_poll.
@@ -75,8 +73,7 @@ The impact of using made-up data is significant. When making up numbers, the dat
 
 How you might collect or validate real poll data in a true analysis.
 
-I might collect or validate real poll data in a true analysis by showing data from side-by-side instead of only showing differences. Showing data from side-by-side gives a better graphical representation of the actual numbers that are viewed and provides an easier comparison. It also helps to have a large sample size and to verify that the data from any particular source is accurate.   
-
+I might collect or validate real poll data in a true analysis by showing data from side-by-side instead of only showing differences. Showing data from side-by-side gives a better graphical representation of the actual numbers that are viewed and provides an easier comparison. It also helps to have a large sample size and to verify that the data from any particular source is accurate.
 
 Include your R code (in a code chunk) and the generated plot.
 
@@ -98,3 +95,6 @@ ggplot(longData, aes(x=Name,y=value,colour=Poll,fill=Poll))+
 
 Here is a link to my blog and a screenshot of my updated github repo
 
+<https://lis4370-r-programming-journal.netlify.app/>
+
+![](mod3git.png)
