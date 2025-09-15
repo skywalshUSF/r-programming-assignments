@@ -1,0 +1,23 @@
+---
+title: "Module 4 Assignment"
+description: |
+  Programming Structure in R
+preview:
+author:
+  - name: Skylar Walsh
+date: 2025-09-15
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r}
+#| echo: TRUE
+#| eval: TRUE
+#| file: https://raw.githubusercontent.com/skywalshUSF/RProgrammingFall2025WalshSkylar/refs/heads/main/Assignments/Assignment-04-Programming-Structure/Assignment_04.R
+
+```
+
