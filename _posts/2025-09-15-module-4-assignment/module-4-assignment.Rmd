@@ -11,13 +11,17 @@ output:
     self_contained: false
 ---
 
+Here is a link to my github repo:
+
+<https://github.com/skywalshUSF/RProgrammingFall2025WalshSkylar/tree/main/Assignments/Assignment-04-Programming-Structure>
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
 ```{r}
 #| echo: TRUE
 #| eval: TRUE
 #| file: https://raw.githubusercontent.com/skywalshUSF/RProgrammingFall2025WalshSkylar/refs/heads/main/Assignments/Assignment-04-Programming-Structure/Assignment_04.R
 
 ```
-
