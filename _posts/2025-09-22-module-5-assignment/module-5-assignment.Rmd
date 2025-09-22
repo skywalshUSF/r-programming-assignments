@@ -2,7 +2,7 @@
 title: "Module 5 Assignment"
 description: |
   Doing Math in R
-preview:
+preview: https://github.com/skywalshUSF/r-programming-assignments/blob/main/_posts/2025-09-22-module-5-assignment/matrix.png?raw=true
 author:
   - name: Skylar Walsh
 date: 2025-09-22
