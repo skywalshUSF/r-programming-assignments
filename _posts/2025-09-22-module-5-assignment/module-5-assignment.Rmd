@@ -13,7 +13,7 @@ output:
 
 Here is a link to my github repo:
 
-<https://github.com/skywalshUSF/RProgrammingFall2025WalshSkylar/tree/main/Assignments/Assignment-05-Doing-Math-in-R-Part-1>
+<https://raw.githubusercontent.com/skywalshUSF/RProgrammingFall2025WalshSkylar/refs/heads/main/Assignments/Assignment-05-Doing-Math-in-R-Part-1/Assignment_05.R>
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
