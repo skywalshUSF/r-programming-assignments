@@ -1,0 +1,27 @@
+---
+title: "Module 5 Assignment"
+description: |
+  Doing Math in R
+preview:
+author:
+  - name: Skylar Walsh
+date: 2025-09-22
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+Here is a link to my github repo:
+
+<https://github.com/skywalshUSF/RProgrammingFall2025WalshSkylar/tree/main/Assignments/Assignment-05-Doing-Math-in-R-Part-1>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+#| echo: TRUE
+#| eval: TRUE
+#| file: https://raw.githubusercontent.com/skywalshUSF/RProgrammingFall2025WalshSkylar/refs/heads/main/Assignments/Assignment-05-Doing-Math-in-R-Part-1/Assignment_05.R
+
+```
