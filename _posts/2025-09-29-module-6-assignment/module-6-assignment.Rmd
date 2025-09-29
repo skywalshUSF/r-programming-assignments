@@ -1,0 +1,27 @@
+---
+title: "Module 6 Assignment"
+description: |
+  Doing Math in R Part 2
+preview: https://github.com/skywalshUSF/r-programming-assignments/blob/main/_posts/2025-09-22-module-5-assignment/matrix.png?raw=true
+author:
+  - name: Skylar Walsh
+date: 2025-09-29
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+Here is a link to my github repo:
+
+<https://github.com/skywalshUSF/RProgrammingFall2025WalshSkylar/tree/main/Assignments/Assignment-06-Doing-Math-In-R-Part-2>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+#| echo: TRUE
+#| eval: TRUE
+#| file: https://raw.githubusercontent.com/skywalshUSF/RProgrammingFall2025WalshSkylar/refs/heads/main/Assignments/Assignment-06-Doing-Math-In-R-Part-2/Assignment_06.R
+
+```
