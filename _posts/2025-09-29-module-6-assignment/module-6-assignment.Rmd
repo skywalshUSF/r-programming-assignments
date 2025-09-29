@@ -2,7 +2,7 @@
 title: "Module 6 Assignment"
 description: |
   Doing Math in R Part 2
-preview: https://github.com/skywalshUSF/r-programming-assignments/blob/main/_posts/2025-09-22-module-5-assignment/matrix.png?raw=true
+preview: https://github.com/skywalshUSF/r-programming-assignments/blob/main/_posts/2025-09-29-module-6-assignment/matrix_math.png?raw=true
 author:
   - name: Skylar Walsh
 date: 2025-09-29
