@@ -2,7 +2,7 @@
 title: "Module 7 Assignment"
 description: |
   R Object: S3 vs. S4
-preview: https://github.com/skywalshUSF/r-programming-assignments/blob/main/_posts/2025-09-29-module-6-assignment/matrix_math.png?raw=true
+preview: https://github.com/skywalshUSF/r-programming-assignments/blob/main/_posts/2025-10-08-module-7-assignment/OOP.jpg?raw=true
 author:
   - name: Skylar Walsh
 date: 2025-10-08
