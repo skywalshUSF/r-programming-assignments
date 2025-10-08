@@ -1,0 +1,27 @@
+---
+title: "Module 7 Assignment"
+description: |
+  R Object: S3 vs. S4
+preview: https://github.com/skywalshUSF/r-programming-assignments/blob/main/_posts/2025-09-29-module-6-assignment/matrix_math.png?raw=true
+author:
+  - name: Skylar Walsh
+date: 2025-10-08
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+Here is a link to my github repo:
+
+<https://github.com/skywalshUSF/RProgrammingFall2025WalshSkylar/tree/main/Assignments/Assignment-07-R-Object_S3_vs._S4>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+#| echo: TRUE
+#| eval: TRUE
+#| file: https://raw.githubusercontent.com/skywalshUSF/RProgrammingFall2025WalshSkylar/refs/heads/main/Assignments/Assignment-07-R-Object_S3_vs._S4/Assignment_07.R
+
+```
