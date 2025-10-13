@@ -1557,12 +1557,58 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <span><span class='co'># Place the Assignment 6 dataset (tab‑ or space‑delimited) on your computer and</span></span>
 <span><span class='co'># In R, read it into a data frame</span></span>
 <span><span class='va'>x</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/utils/read.table.html'>read.table</a></span><span class='op'>(</span><span class='st'>"C:/RProgrammingFall2025WalshSkylar/Assignments/Assignment-08-Input-Output-String-Manipulation-r/Assignment 6 Dataset.txt"</span>, header <span class='op'>=</span> <span class='cn'>T</span>, sep <span class='op'>=</span> <span class='st'>","</span><span class='op'>)</span></span>
-<span></span>
-<span><span class='co'># Load plyr and compute the mean of Grade by Sex</span></span>
+<span><span class='va'>x</span></span></code></pre>
+</div>
+<pre><code>        Name Age    Sex Grade
+1       Raul  25   Male    80
+2     Booker  18   Male    83
+3      Lauri  21 Female    90
+4     Leonie  21 Female    91
+5    Sherlyn  22 Female    85
+6    Mikaela  20 Female    69
+7    Raphael  23   Male    91
+8       Aiko  24 Female    97
+9   Tiffaney  21 Female    78
+10    Corina  23 Female    81
+11 Petronila  23 Female    98
+12    Alecia  20 Female    87
+13   Shemika  23 Female    97
+14    Fallon  22 Female    90
+15   Deloris  21 Female    67
+16    Randee  23 Female    91
+17     Eboni  20 Female    84
+18   Delfina  19 Female    93
+19 Ernestina  19 Female    93
+20      Milo  19   Male    67</code></pre>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'># Load plyr and compute the mean of Grade by Sex</span></span>
 <span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='http://had.co.nz/plyr'>plyr</a></span><span class='op'>)</span></span>
 <span><span class='va'>gender_mean</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/pkg/plyr/man/ddply.html'>ddply</a></span><span class='op'>(</span><span class='va'>x</span>,<span class='st'>"Sex"</span>,<span class='va'>transform</span>, Grade.Average<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/mean.html'>mean</a></span><span class='op'>(</span><span class='va'>Grade</span><span class='op'>)</span><span class='op'>)</span></span>
-<span></span>
-<span><span class='co'># Write the grouped means to a text file</span></span>
+<span><span class='va'>gender_mean</span></span></code></pre>
+</div>
+<pre><code>        Name Age    Sex Grade Grade.Average
+1      Lauri  21 Female    90       86.9375
+2     Leonie  21 Female    91       86.9375
+3    Sherlyn  22 Female    85       86.9375
+4    Mikaela  20 Female    69       86.9375
+5       Aiko  24 Female    97       86.9375
+6   Tiffaney  21 Female    78       86.9375
+7     Corina  23 Female    81       86.9375
+8  Petronila  23 Female    98       86.9375
+9     Alecia  20 Female    87       86.9375
+10   Shemika  23 Female    97       86.9375
+11    Fallon  22 Female    90       86.9375
+12   Deloris  21 Female    67       86.9375
+13    Randee  23 Female    91       86.9375
+14     Eboni  20 Female    84       86.9375
+15   Delfina  19 Female    93       86.9375
+16 Ernestina  19 Female    93       86.9375
+17      Raul  25   Male    80       80.2500
+18    Booker  18   Male    83       80.2500
+19   Raphael  23   Male    91       80.2500
+20      Milo  19   Male    67       80.2500</code></pre>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'># Write the grouped means to a text file</span></span>
 <span><span class='fu'><a href='https://rdrr.io/r/utils/write.table.html'>write.table</a></span><span class='op'>(</span><span class='va'>gender_mean</span>, <span class='st'>"gender_mean.txt"</span>,sep<span class='op'>=</span><span class='st'>","</span>,row.names <span class='op'>=</span> <span class='cn'>F</span><span class='op'>)</span></span>
 <span></span>
 <span><span class='co'># Task 2 - Filter Names Containing "i"</span></span>
@@ -1570,8 +1616,25 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <span><span class='co'># Convert the data (if not already) to a data frame (see above).</span></span>
 <span><span class='co'># Select rows where Name contains “i” or “I”</span></span>
 <span><span class='va'>i_students</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span><span class='op'>(</span><span class='va'>x</span>,<span class='fu'><a href='https://rdrr.io/r/base/grep.html'>grepl</a></span><span class='op'>(</span><span class='st'>"[iI]"</span>,<span class='va'>x</span><span class='op'>$</span><span class='va'>Name</span><span class='op'>)</span><span class='op'>)</span></span>
-<span></span>
-<span><span class='co'># Extract just the names and write them to a CSV</span></span>
+<span><span class='va'>i_students</span></span></code></pre>
+</div>
+<pre><code>        Name Age    Sex Grade
+3      Lauri  21 Female    90
+4     Leonie  21 Female    91
+6    Mikaela  20 Female    69
+8       Aiko  24 Female    97
+9   Tiffaney  21 Female    78
+10    Corina  23 Female    81
+11 Petronila  23 Female    98
+12    Alecia  20 Female    87
+13   Shemika  23 Female    97
+15   Deloris  21 Female    67
+17     Eboni  20 Female    84
+18   Delfina  19 Female    93
+19 Ernestina  19 Female    93
+20      Milo  19   Male    67</code></pre>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'># Extract just the names and write them to a CSV</span></span>
 <span><span class='fu'><a href='https://rdrr.io/r/utils/write.table.html'>write.csv</a></span><span class='op'>(</span><span class='va'>i_students</span><span class='op'>$</span><span class='va'>Name</span>, file <span class='op'>=</span> <span class='st'>"i_students.csv"</span>, row.names <span class='op'>=</span> <span class='cn'>F</span>, quote <span class='op'>=</span> <span class='cn'>F</span><span class='op'>)</span></span>
 <span></span>
 <span><span class='co'># Task 3- Export Filtered Dataset</span></span>
@@ -1616,22 +1679,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 5 Tiffaney  21 Female    78
 6   Corina  23 Female    81</code></pre>
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'># Calling the read.table() function will scan the file in table format and</span></span>
-<span><span class='co'># create a data frame with records as lines and variables/values as fields.</span></span>
-<span><span class='co'># The 'x' data frame can be used to group specific records.</span></span>
-<span><span class='co'># The 'plyr' package contains ddply() which can select rows and/or columns</span></span>
-<span><span class='co'># of a data frame. The results are stored in a new object named 'y' that</span></span>
-<span><span class='co'># includes a new column named 'Grade.Average' that stores the mean of Grade by</span></span>
-<span><span class='co'># Sex.</span></span>
-<span><span class='co'># Use the write.table() function to write data from a data frame into a text</span></span>
-<span><span class='co'># file and store it in the working directory.</span></span>
-<span><span class='co'># the subset() function allows the program to filter character data in strings</span></span>
-<span><span class='co'># with regular expressions using grepl().</span></span>
-<span><span class='co'># All of the records in the 'i_students' data frame can be exported to a .csv</span></span>
-<span><span class='co'># file in the working directory using the write.csv() function.</span></span></code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'># To begin data manipulation, the read.table() function will be used to import</span></span>
+<span><span class='co'># data from a file into a data frame, designated as 'x', where lines are records</span></span>
+<span><span class='co'># and fields are variables. The 'x' data frame can be used to group specific</span></span>
+<span><span class='co'># records. This 'x' data frame is then processed using the ddply() function from</span></span>
+<span><span class='co'># the plyr package, which allows for grouping and selection of rows or columns.</span></span>
+<span><span class='co'># The results are stored in a new object named 'y' that includes a new column</span></span>
+<span><span class='co'># named 'Grade.Average' that holds the mean of Grade grouped by Sex. The</span></span>
+<span><span class='co'># write.table() function is used to write data from a data frame into a text</span></span>
+<span><span class='co'># file and store it in the working directory. The subset() function allows the</span></span>
+<span><span class='co'># program to filter character data in strings with regular expressions using</span></span>
+<span><span class='co'># grepl(). All of the records in the 'i_students' data frame can be exported to</span></span>
+<span><span class='co'># a .csv file in the working directory using the write.csv() function.</span></span></code></pre>
 </div>
 </div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
