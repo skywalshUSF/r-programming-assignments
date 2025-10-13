@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2025-10-13-module-8-assignment/",
+    "title": "Module 8 Assignment",
+    "description": "Input/Output, String Manipulation, and the plyr Package",
+    "author": [
+      {
+        "name": "Skylar Walsh",
+        "url": {}
+      }
+    ],
+    "date": "2025-10-13",
+    "categories": [],
+    "contents": "\r\nHere is a link to my github repo:\r\nhttps://github.com/skywalshUSF/RProgrammingFall2025WalshSkylar/tree/main/Assignments/Assignment-08-Input-Output-String-Manipulation-r\r\n\r\n\r\n#Module #8 post for my LIS4370 blog. Welcome!\r\n\r\n# Task 1 - Import Assignment 6 Data\r\n\r\n# Place the Assignment 6 dataset (tab‑ or space‑delimited) on your computer and\r\n# In R, read it into a data frame\r\nx <- read.table(\"C:/RProgrammingFall2025WalshSkylar/Assignments/Assignment-08-Input-Output-String-Manipulation-r/Assignment 6 Dataset.txt\", header = T, sep = \",\")\r\n\r\n# Load plyr and compute the mean of Grade by Sex\r\nlibrary(plyr)\r\ngender_mean <- ddply(x,\"Sex\",transform, Grade.Average=mean(Grade))\r\n\r\n# Write the grouped means to a text file\r\nwrite.table(gender_mean, \"gender_mean.txt\",sep=\",\",row.names = F)\r\n\r\n# Task 2 - Filter Names Containing \"i\"\r\n\r\n# Convert the data (if not already) to a data frame (see above).\r\n# Select rows where Name contains “i” or “I”\r\ni_students <- subset(x,grepl(\"[iI]\",x$Name))\r\n\r\n# Extract just the names and write them to a CSV\r\nwrite.csv(i_students$Name, file = \"i_students.csv\", row.names = F, quote = F)\r\n\r\n# Task 3- Export Filtered Dataset\r\n\r\n# Save the full filtered data frame to a CSV\r\nwrite.csv(i_students, file = \"i_students_full.csv\", row.names = F)\r\n\r\n# Confirm the files gender_mean.txt, i_students.csv, and i_students_full.csv\r\n# exist in your working directory.\r\n\r\n# choose files from working directory, read/scan and test output\r\ngender_mean_test <- read.table(\"C:/RProgrammingFall2025WalshSkylar/gender_mean.txt\", header = TRUE, stringsAsFactors = FALSE,sep = \",\")\r\nhead(gender_mean_test)\r\n\r\n      Name Age    Sex Grade Grade.Average\r\n1    Lauri  21 Female    90       86.9375\r\n2   Leonie  21 Female    91       86.9375\r\n3  Sherlyn  22 Female    85       86.9375\r\n4  Mikaela  20 Female    69       86.9375\r\n5     Aiko  24 Female    97       86.9375\r\n6 Tiffaney  21 Female    78       86.9375\r\n\r\ni_students_test <- read.table(\"C:/RProgrammingFall2025WalshSkylar/i_students.csv\", header = TRUE, stringsAsFactors = FALSE,sep = \",\")\r\nhead(i_students_test)\r\n\r\n         x\r\n1    Lauri\r\n2   Leonie\r\n3  Mikaela\r\n4     Aiko\r\n5 Tiffaney\r\n6   Corina\r\n\r\ni_students_full_test <- read.table(\"C:/RProgrammingFall2025WalshSkylar/i_students_full.csv\", header = TRUE, stringsAsFactors = FALSE,sep = \",\")\r\nhead(i_students_full_test)\r\n\r\n      Name Age    Sex Grade\r\n1    Lauri  21 Female    90\r\n2   Leonie  21 Female    91\r\n3  Mikaela  20 Female    69\r\n4     Aiko  24 Female    97\r\n5 Tiffaney  21 Female    78\r\n6   Corina  23 Female    81\r\n\r\n# Calling the read.table() function will scan the file in table format and\r\n# create a data frame with records as lines and variables/values as fields.\r\n# The 'x' data frame can be used to group specific records.\r\n# The 'plyr' package contains ddply() which can select rows and/or columns\r\n# of a data frame. The results are stored in a new object named 'y' that\r\n# includes a new column named 'Grade.Average' that stores the mean of Grade by\r\n# Sex.\r\n# Use the write.table() function to write data from a data frame into a text\r\n# file and store it in the working directory.\r\n# the subset() function allows the program to filter character data in strings\r\n# with regular expressions using grepl().\r\n# All of the records in the 'i_students' data frame can be exported to a .csv\r\n# file in the working directory using the write.csv() function.\r\n\r\n\r\n\r\n\r\n\r\n",
+    "preview": "https://github.com/skywalshUSF/r-programming-assignments/blob/main/_posts/2025-10-13-module-8-assignment/r-string.jpg?raw=true",
+    "last_modified": "2025-10-13T14:48:05-04:00",
+    "input_file": "module-8-assignment.knit.md"
+  },
+  {
     "path": "posts/2025-10-08-module-7-assignment/",
     "title": "Module 7 Assignment",
     "description": "R Object: S3 vs. S4",

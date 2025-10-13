@@ -1,0 +1,27 @@
+---
+title: "Module 8 Assignment"
+description: |
+  Input/Output, String Manipulation, and the plyr Package
+preview: https://github.com/skywalshUSF/r-programming-assignments/blob/main/_posts/2025-10-13-module-8-assignment/r-string.jpg?raw=true
+author:
+  - name: Skylar Walsh
+date: 2025-10-13
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+Here is a link to my github repo:
+
+<https://github.com/skywalshUSF/RProgrammingFall2025WalshSkylar/tree/main/Assignments/Assignment-08-Input-Output-String-Manipulation-r>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+#| echo: TRUE
+#| eval: TRUE
+#| file: https://raw.githubusercontent.com/skywalshUSF/RProgrammingFall2025WalshSkylar/refs/heads/main/Assignments/Assignment-08-Input-Output-String-Manipulation-r/Assignment_08.R
+
+```
