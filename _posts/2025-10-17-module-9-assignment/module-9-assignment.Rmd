@@ -1,0 +1,27 @@
+---
+title: "Module 9 Assignment"
+description: |
+  Visualization
+preview: 
+author:
+  - name: Skylar Walsh
+date: 2025-10-22
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+Here is a link to my github repo:
+
+<https://github.com/skywalshUSF/RProgrammingFall2025WalshSkylar/tree/main/Assignments/Assignment-09-Visualization-with-ggplot2>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+#| echo: TRUE
+#| eval: TRUE
+#| file: https://raw.githubusercontent.com/skywalshUSF/RProgrammingFall2025WalshSkylar/refs/heads/main/Assignments/Assignment-09-Visualization-with-ggplot2/Assignment_09.R
+
+```

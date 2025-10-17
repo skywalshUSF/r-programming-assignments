@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2025-10-17-module-9-assignment/",
+    "title": "Module 9 Assignment",
+    "description": "Visualization",
+    "author": [
+      {
+        "name": "Skylar Walsh",
+        "url": {}
+      }
+    ],
+    "date": "2025-10-22",
+    "categories": [],
+    "contents": "\r\nHere is a link to my github repo:\r\nhttps://github.com/skywalshUSF/RProgrammingFall2025WalshSkylar/tree/main/Assignments/Assignment-09-Visualization-with-ggplot2\r\n\r\n\r\n#Module #9 post for my LIS4370 blog. Welcome!\r\n\r\n# Choose one dataset from the Rdatasets collection. Load it into R with:\r\n# data(\"DatasetName\",package = \"PackageName\")\r\n# head(DatasetName)\r\ndata(\"mtcars\", package = \"datasets\")\r\nhead(mtcars)\r\n\r\n                   mpg cyl disp  hp drat    wt  qsec vs am gear carb\r\nMazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4\r\nMazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4\r\nDatsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1\r\nHornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1\r\nHornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2\r\nValiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1\r\n\r\n# Task 1 - Base R Graphics\r\n# Create at least two plots using base R functions.\r\n\r\n# Scatter plot\r\nplot(mtcars$mpg, main=\"Base R 'mtcars' data set scatter plot: mpg\", xlab=\"wt\", ylab=\"mpg\", pch=19, col=\"darkblue\")\r\n\r\n\r\n# Histogram\r\nhist(mtcars$mpg, main = \"Base R 'mtcars histogram of miles per gallon\", xlab = \"mpg\", col=\"lightblue\", border=\"black\")\r\n\r\n\r\n# Task 2 - Lattice Graphics\r\n# Use the lattice package to produce conditioned or multivariate plots\r\nlibrary(lattice)\r\n\r\n# Conditional scatter plot (small multiples)\r\nxyplot(mpg ~ wt|factor(cyl), data = mtcars, main=\"Lattice: mpg vs. wt by number of cylinders\")\r\n\r\n\r\n# Box-and-whisker plot\r\nbwplot(mpg ~ factor(cyl), data = mtcars, main = \"Lattice: miles per gallon by cylinder\")\r\n\r\n\r\n# Task 3 - ggplot2\r\n# Use ggplot2's grammar of graphics to create layered visuals.\r\nlibrary(ggplot2)\r\n\r\n# Scatter plot with smoothing\r\nggplot(mtcars, aes(x = wt, y = mpg, color=factor(cyl))) + geom_point() + geom_smooth(method = \"lm\") + labs(title = \"ggplot2: mpg vs. wt with trend by cyl\")\r\n\r\n\r\n# Faceted Histogram\r\nggplot(mtcars, aes(mpg)) + geom_histogram(binwidth = 1) + facet_wrap(~ cyl) + labs(title = \"ggplot2: mpg distribution by cyl\")\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+    "preview": "posts/2025-10-17-module-9-assignment/module-9-assignment_files/figure-html5/unnamed-chunk-1-1.png",
+    "last_modified": "2025-10-17T14:38:28-04:00",
+    "input_file": "module-9-assignment.knit.md"
+  },
+  {
     "path": "posts/2025-10-13-module-8-assignment/",
     "title": "Module 8 Assignment",
     "description": "Input/Output, String Manipulation, and the plyr Package",
