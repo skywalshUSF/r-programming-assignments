@@ -1,8 +1,8 @@
 ---
 title: "Module 10 Assignment"
 description: |
-  Visualization
-preview: https://github.com/skywalshUSF/r-programming-assignments/blob/main/_posts/2025-10-22-module-9-assignment/datavis.jpg?raw=true
+  Building your own R package
+preview: https://github.com/skywalshUSF/r-programming-assignments/blob/main/_posts/2025-10-27-module-10-assignment/desc.png?raw=true
 author:
   - name: Skylar Walsh
 date: 2025-10-27
