@@ -1,0 +1,40 @@
+---
+title: "Module 11 Assignment"
+description: |
+  Debugging and Defensive Programming in R
+preview: https://github.com/skywalshUSF/r-programming-assignments/blob/main/_posts/2025-10-27-module-10-assignment/desc.png?raw=true
+author:
+  - name: Skylar Walsh
+date: 2025-11-03
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Here are my debugging screenshots:
+
+1st
+
+[![](debug1.png)](debug1.png)
+
+2nd:
+
+[![](debug2.png)](debug2.png)
+
+```{r}
+#| error: TRUE
+#| echo: TRUE
+#| eval: TRUE
+#| file: https://raw.githubusercontent.com/skywalshUSF/RProgrammingFall2025WalshSkylar/refs/heads/main/Assignments/Assignment-11-Debugging/module11_debug.R
+
+```
+
+Here is a link to my github repo:
+
+[![](mod11git.png)](mod11git.png)
+
+<https://github.com/skywalshUSF/RProgrammingFall2025WalshSkylar/tree/main/Assignments/Assignment-11-Debugging>
