@@ -1,6 +1,6 @@
 [
   {
-    "path": "posts/2025-11-03-module-11-assignment/",
+    "path": "posts/2025-11-05-module-11-assignment/",
     "title": "Module 11 Assignment",
     "description": "Debugging and Defensive Programming in R",
     "author": [
@@ -9,11 +9,11 @@
         "url": {}
       }
     ],
-    "date": "2025-11-03",
+    "date": "2025-11-05",
     "categories": [],
     "contents": "\r\nHere are my debugging screenshots:\r\n1st\r\n\r\n2nd:\r\n\r\n\r\n\r\n#Module #11 post for my LIS4370 blog. Welcome!\r\n\r\n# Below is a function intended to flag rows of a numeric matrix x that are\r\n# outliers in every column according to the Tukey rule.\r\n# It contains a deliberate bug:\r\n\r\ntukey_multiple <- function(x) {\r\n  outliers <- array(TRUE, dim = dim(x))\r\n  for (j in 1:ncol(x)) {\r\n    outliers[, j] <- outliers[, j] && tukey.outlier(x[, j])\r\n  }\r\n  outlier.vec <- vector(\"logical\", length = nrow(x))\r\n  for (i in 1:nrow(x)) {\r\n    outlier.vec[i] <- all(outliers[i, ])\r\n  }\r\n  return(outlier.vec)\r\n}\r\n\r\n# Task 1 - Reproduce the Error\r\n\r\n# In R, create a test matrix and run the function:\r\nset.seed(123)\r\ntest_mat <- matrix(rnorm(50), nrow = 10)\r\n\r\n# Capture the exact error message you see.\r\n\r\ntukey_multiple(test_mat)\r\n\r\nError in outliers[, j] && tukey.outlier(x[, j]): 'length = 10' in coercion to 'logical(1)'\r\n\r\n# Task 2 - Diagnose the Bug\r\n#traceback()\r\n#debug(tukey_multiple)\r\n#tukey_multiple(test_mat)\r\n\r\n# Screenshot of process/output\r\n\r\n# Reflect on why using && inside the loop causes the failure.\r\n# (Recall that && only returns a single TRUE/FALSE for the first element,\r\n# whereas you need element‑wise comparison.)\r\n\r\n# & is vectorized and && is not. && only treats a vector as a scalar object and\r\n# only evaluates the first element and && will evaluate all elements in vectors.\r\n\r\n# Task 3 - Fix the Code\r\n\r\n# Edit the function so that the logical operation is applied element‑wise.\r\n# Specifically, replace the buggy line with the correct operator.\r\n\r\n# Corrected inside the loop:\r\n# outliers[, j] <- outliers[, j] & tukey.outlier(x[, j])\r\n\r\ncorrected_tukey <- function(x) {\r\n  outliers <- array(TRUE, dim = dim(x))\r\n  for (j in seq_len(ncol(x))) {\r\n    outliers[, j] <- outliers[, j] & tukey.outlier(x[, j])\r\n  }\r\n  outlier.vec <- logical(nrow(x))\r\n  for (i in seq_len(nrow(x))) {\r\n    outlier.vec[i] <- all(outliers[i, ])\r\n  }\r\n  outlier.vec\r\n}\r\n\r\n# Task 4 - Validate Your Fix\r\n\r\n# Re‑run your corrected function on test_mat and verify it returns a\r\n# logical vector of length 10 without error:\r\ncorrected_tukey(test_mat)\r\n\r\nError in tukey.outlier(x[, j]): could not find function \"tukey.outlier\"\r\n\r\n#traceback()\r\n#debug(tukey_multiple)\r\n#tukey_multiple(test_mat)\r\n\r\n# Screenshot of process/output\r\n\r\n# remove the faulty function & Fix the Code\r\n\r\n# Edit the function so that tukey.outlier() is removed.\r\ncorrected_tukey <- function(x) {\r\n  outliers <- array(TRUE, dim = dim(x))\r\n  for (j in seq_len(ncol(x))) {\r\n    outliers[, j] <- outliers[, j] & x[, j]\r\n  }\r\n  outlier.vec <- logical(nrow(x))\r\n  for (i in seq_len(nrow(x))) {\r\n    outlier.vec[i] <- all(outliers[i, ])\r\n  }\r\n  outlier.vec\r\n}\r\n\r\n# Re‑run your corrected function on test_mat and verify it returns a\r\n# logical vector of length 10 without error:\r\ncorrected_tukey(test_mat)\r\n\r\n [1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE\r\n\r\nHere is a link to my github repo:\r\n\r\nhttps://github.com/skywalshUSF/RProgrammingFall2025WalshSkylar/tree/main/Assignments/Assignment-11-Debugging\r\n\r\n\r\n\r\n",
-    "preview": "https://github.com/skywalshUSF/r-programming-assignments/blob/main/_posts/2025-11-03-module-11-assignment/debugging.png?raw=true",
-    "last_modified": "2025-11-03T16:02:43-05:00",
+    "preview": "https://github.com/skywalshUSF/r-programming-assignments/blob/main/_posts/2025-11-05-module-11-assignment/debugging.png?raw=true",
+    "last_modified": "2025-11-05T08:43:26-05:00",
     "input_file": "module-11-assignment.knit.md"
   },
   {

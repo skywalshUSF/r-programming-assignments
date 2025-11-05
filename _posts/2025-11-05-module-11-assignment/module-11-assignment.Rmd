@@ -2,10 +2,10 @@
 title: "Module 11 Assignment"
 description: |
   Debugging and Defensive Programming in R
-preview: https://github.com/skywalshUSF/r-programming-assignments/blob/main/_posts/2025-11-03-module-11-assignment/debugging.png?raw=true
+preview: https://github.com/skywalshUSF/r-programming-assignments/blob/main/_posts/2025-11-05-module-11-assignment/debugging.png?raw=true
 author:
   - name: Skylar Walsh
-date: 2025-11-03
+date: 2025-11-05
 output:
   distill::distill_article:
     self_contained: false
