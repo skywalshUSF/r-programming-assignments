@@ -2,7 +2,7 @@
 title: "Module 12 Assignment"
 description: |
   Basics of R Markdown Authoring and Document Structure
-preview: https://github.com/skywalshUSF/r-programming-assignments/blob/main/_posts/2025-11-05-module-11-assignment/debugging.png?raw=true
+preview: https://github.com/skywalshUSF/r-programming-assignments/blob/main/_posts/2025-11-10-module-12-assignment/htmloutput.png?raw=true
 author:
   - name: Skylar Walsh
 date: 2025-11-10
@@ -12,6 +12,13 @@ output:
 ---
 
 This is my Module 12 blog post for LIS4370.
+
+Here is a link to my github repo:
+
+<https://github.com/skywalshUSF/RProgrammingFall2025WalshSkylar/tree/main/Assignments/Assignment-12-R-Markdown>
+
+[![](githubmod12.png)](githubmod12.png)
+
 
 ## Task: 1 - Create an R Markdown File
 
@@ -99,6 +106,4 @@ Here is a screenshot of the knitted output in HTML:
 
 ### A concluding reflection on your experience using R Markdown vs. writing plain reports
 
-In conclusion, the experience from writing plain reports to using R Markdown is an interesting shift that offers significant advantages, despite a notable initial hurdle. The primary challenge lies in the steep learning curve associated with mastering R Markdown's syntax, integration of code chunks, and understanding its various output formats and customization options. This initial time investment can be a deterrent for those accustomed to the immediate familiarity of traditional word processors.
-
-However, the benefits of practicing R Markdown ultimately far outweighs this initial difficulty. The fundamentals of programming ensure that narrative text, code, and results are integrated seamlessly, leading to reports that are fully reproducible, dynamic, and less prone to manual errors. The ability to generate professional quality outputs in multiple formats like, PDF, HTML, and Word from a single source file greatly enhances efficiency and consistency as well. While the initial learning curve requires commitment, the resulting automation, reproducibility, and flexibility transforms the reporting process, making R Markdown a great choice for data science and analytical driven communication.
+In conclusion, the transition from writing plain reports to using R Markdown presents a significant, yet highly advantageous shift in workflow. While the initial hurdle of mastering R Markdown’s syntax, code chunk integration, and output customization presents a notable learning curve that may deter users accustomed to traditional word processors, the long-term benefits far outweigh this initial time investment. R Markdown fundamentally changes the reporting process by enabling the seamless integration of narrative sections, executable code chunks, and their results, all within a single document. This robust framework also fully supports the use of , further enhancing its capabilities for technical documentation. By uniting text, dynamic code, and complex equations, R Markdown produces fully reproducible reports that drastically reduce manual errors. Furthermore, the ability to generate professional quality documents in multiple formats, such as PDF, HTML, and Word, from this single source greatly enhances efficiency and consistency. Ultimately, the commitment required to overcome the initial learning curve is justified by the resulting automation, flexibility, and reproducibility, making R Markdown a superior choice for data science and analytical communication.
