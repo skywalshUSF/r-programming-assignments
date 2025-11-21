@@ -186,79 +186,13 @@ get_starwars_data_by_starship(starship_name = "x-wing")
 
 ## External libraries or dependencies for the StarWarsStats package.
 
-Only one external library has been imported that will depend on the package. It is the 'dplyr' package, a basic tool for data manipulation, which is mainly part of the 'tidyverse' package. dplyr() offered many functions for me to apply to the creation of my 'StarWarsStats' functions, such as 'select()' for choosing specific columns and filter() to subset rows based on a set of required conditions that need to be fulfilled.
+Only one external library has been imported that the package depends on. It is the 'dplyr' package, a basic tool for data manipulation, which is mainly part of the 'tidyverse' package. dplyr() offered many functions for me to apply to the creation of my 'StarWarsStats' functions, such as 'select()' for choosing specific columns and filter() to subset rows based on a set of required conditions that need to be fulfilled.
 
 ## Metadata Fields
 
 The DESCRIPTION file contains many essential package metadata that R uses to manage dependencies, licensing, and documentation. These are the following fields (Note: there are over 15):
 
-### 1. Package
-
-This represents the official name of the package
-
-### 2. Title
-
-This is a single-line summary of what the package will do.
-
-### 3. Version
-
-This shows the current package version number
-
-### 4. Authors
-
-This specifies the contributors and editors of the package
-
-### 5. Description
-
-This is a more thorough explanation and summary of the package, including its purpose, goals, and audience.
-
-### 6. License
-
-This specifies the license under which the package is distributed
-
-### 7. Encoding
-
-The character encoding used in the source files
-
-### 8. Roxygen
-
-Configuration setting for the roxygen2 package
-
-### 9. RoxygenNote
-
-Records the version of roxygen2 used to generate documentation
-
-### 10. Imports
-
-Lists packages required for the package's functions to work
-
-### 11. Depends
-
-Specifies the minimum required version of the R language.
-
-### 12. LazyData
-
-Tells R to load only when it's requested
-
-### 13. Suggests
-
-Lists packages that are not strictly necessary for the main functions but are needed for building vignettes.
-
-### 14. Config/testthat/edition
-
-Configuration setting for the testthat package
-
-### 15. URL
-
-The official location or website for the package
-
-### 16. BugReports
-
-The location where users should report issues or bugs
-
-### 17. VignetteBuilder
-
-Specifies the software used to build the package's vignettes
+[![](desc.png)](desc.png)
 
 ## Package License
 
