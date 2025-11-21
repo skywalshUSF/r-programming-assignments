@@ -2,7 +2,7 @@
 title: "Final Project"
 description: |
   Develop an R package and publish on GitHub
-preview: https://github.com/skywalshUSF/r-programming-assignments/blob/main/_posts/2025-11-10-module-12-assignment/htmloutput.png?raw=true
+preview: https://github.com/skywalshUSF/r-programming-assignments/blob/main/_posts/2025-11-21-final-project/finalgithub.png?raw=true
 author:
   - name: Skylar Walsh
 date: 2025-11-21
@@ -21,7 +21,7 @@ Here is a link to my final project 'StarWarsStats' R Package github repo:
 
 ## Task: Develop an R package, publish it on GitHub, and share the repository link on Canvas. Package must include all documentation components of modules 10, 11, and 12.
 
-The 'StarWarsStats' package I made is an accessible tool for exploring and manipulating a recognizable built-in dataset in R called 'starwars.' While it is included in the dplyr package, finding certain pieces of information, such as characters born before the Battle of Yavin (BBY), often required me to use complicated filtering code. The package was created to simplify and make sense of this complexity, providing users with simple solutions by creating functions that make Star Wars data analysis more efficient.
+The 'StarWarsStats' package I made is an accessible tool for exploring and manipulating a recognizable built-in dataset in R called 'starwars.' While the dataset is included in the dplyr package, finding certain pieces of information, such as characters born before the Battle of Yavin (BBY), often required me to use complicated filtering code. The StarWarsStats package was created to simplify and make sense of this complexity, providing users with simple solutions by creating functions that make Star Wars data analysis more efficient.
 
 The main goal of the 'StarWarsStats' package is to provide specialized and reliable data extraction functions built to support the 'starwars' data in more meaningful ways. This package can generate interest among three primary audiences: R beginners, Data Analysts, and Educators who can use it to learn and demonstrate working with complex list columns in R. My intended goals are to perform reproducible research with an intuitive tool and become more familiar with clean code and data habits.
 
